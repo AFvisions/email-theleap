@@ -114,11 +114,33 @@
         .img-responsive {
             width: 100%;
             max-width: 100%;
+        }
 
+        .icon-responsive {
+            width: 100%;
+            max-width: 48px;
         }
 
         /* Mobile styles can be set using a media query. */
-        @media screen and (max-width: 600px) {}
+        @media screen and (max-width: 600px) {
+            .fluid-table {
+                width: 100% !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .mobile-copy {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .display-none {
+                display: none !important;
+
+            }
+        }
     </style>
     <!-- Set your dark mode styles below. -->
     <style>
@@ -148,22 +170,21 @@
         <div class="content-container"
             style="color: #666666; font-family: sans-serif; line-height: 1.8; margin: 1rem auto; max-width: 600px; padding: 1em;">
             <!-- HEADER -->
-            <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <td>
                 <td>
-                    <table class="fixed-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
+                    <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
                         width="600px">
                         <tr>
                             <td style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 14px">
-                                <table class="fluid-table" role="presentation" border="0" cellpadding="0"
-                                    cellspacing="0" width="100%">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
                                         <td align="center" valign="top" style="padding: 10px 20px 10px 20px;">
                                             <img src="images/afvisions-handwritten2x.png" width="100px">
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="fluid-table" role="presentation" border="0" cellpadding="0"
+                                <table class="display-none" role="presentation" border="0" cellpadding="0"
                                     cellspacing="0" width="100%">
                                     <tr>
 
@@ -216,25 +237,25 @@
 
             <!-- SECTION -->
 
-            <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                     <td style="background-color: #d2d2d2">
-                        <table class="fixed-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
+                        <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
                             width="600px">
                             <tr>
                                 <td>
-                                    <table class="fluid-table" role="presentation" border="0" cellpadding="0"
-                                        cellspacing="0" width="100%">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                                         <tr>
                                             <td align="center"
                                                 style="padding: 40px 20px 0px 20px; background-color: #d2d2d2;">
-                                                <img class="img-responsive" src="images/the-leap@2x.png" width="394">
+                                                <img class="img-responsive" src="images/the-leap@2x.png" width="394"
+                                                    style="max-width: 394px !important;">
 
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="fluid-table" role="presentation" border="0" cellpadding="0"
-                                        cellspacing="0" align="center">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                        align="center">
 
                                         <tr>
                                             <td align="center" valign="top" width="460" height="1"
@@ -243,13 +264,16 @@
                                             </td>
                                         </tr>
                                     </table>
+                                </td>
+                            </tr>
 
 
 
 
                             <tr>
                                 <td align="left" style="padding: 40px 50px 0px 50px">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                                        in
                                         dicta
                                         eaque perferendis commodi illo cupiditate, excepturi eligendi
                                         asperiores
@@ -286,22 +310,19 @@
                         </table>
                     </td>
                 </tr>
-            </table>
-            </td>
-            </tr>
+
             </table>
 
             <!-- SECTION -->
 
-            <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                     <td style="background-color: #ffffff">
-                        <table class="fixed-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
+                        <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
                             width="600">
                             <tr>
                                 <td>
-                                    <table class="fluid-table" role="presentation" border="0" cellpadding="0"
-                                        cellspacing="0" width="100%">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                                         <tr>
                                             <td align="center">
                                                 <h2>HEADLINE</h2>
@@ -423,15 +444,14 @@
 
             <!-- SECTION -->
 
-            <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                     <td style="background-color: #ffffff">
-                        <table class="fixed-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
+                        <table class="fluid-table" role="presentation" border="0" cellpadding="0" cellspacing="0"
                             width="600">
                             <tr>
                                 <td>
-                                    <table class="fluid-table" role="presentation" border="0" cellpadding="0"
-                                        cellspacing="0" width="100%">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                                         <tr>
                                             <td align="center">
                                                 <h2>HEADLINE</h2>
@@ -460,7 +480,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/1@2x.png
+                                                                                        class="icon-responsive" src="images/1@2x.png
                                                                                     " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -487,7 +507,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/2@2x.png
+                                                                                        class="icon-responsive" src="images/2@2x.png
                                                                                 " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -514,7 +534,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/3@2x.png
+                                                                                        class="icon-responsive" src="images/3@2x.png
                                                                                 " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -541,7 +561,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/4@2x.png
+                                                                                        class="icon-responsive" src="images/4@2x.png
                                                                                     " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -580,7 +600,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/5@2x.png
+                                                                                        class="icon-responsive" src="images/5@2x.png
                                                                                     " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -607,7 +627,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/6@2x.png
+                                                                                        class="icon-responsive" src="images/6@2x.png
                                                                                 " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -634,7 +654,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/7@2x.png
+                                                                                        class="icon-responsive" src="images/7@2x.png
                                                                                 " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
@@ -661,7 +681,7 @@
                                                                             role="presentation">
                                                                             <tr>
                                                                                 <td align="center"><img
-                                                                                        class="img-responsive" src="images/8@2x.png
+                                                                                        class="icon-responsive" src="images/8@2x.png
                                                                                     " width="48">
                                                                                     <p align="left"
                                                                                         style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; line-height:18px">
